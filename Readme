@@ -1,0 +1,61 @@
+Synthesizing Rare Cataract Surgery Samples With Guided Diffusion Models
+This repository focuses on synthesizing rare cataract surgery samples using guided diffusion models. The project involves data preprocessing, phase classification, and the application of guided diffusion for augmenting and generating training data.
+
+Project Overview
+Cataract surgeries are intricate procedures involving multiple phases, which makes training machine learning models challenging due to imbalanced datasets. This project uses guided diffusion models to synthesize rare phases of surgery and build a robust classification model. Key features include:
+
+Data preprocessing to create phase-labeled datasets.
+Training a classification model for cataract surgery phases using augmented data.
+Leveraging guided diffusion models for rare phase augmentation.
+
+Dataset
+The dataset used for this project is Cataract-1K, which consists of 1,000 samples from cataract surgeries. Due to the vast size of the dataset, only 20% of the data was used for training. The dataset is available for download from Synapse:
+
+Cataract-1K Dataset on Synapse link - "https://www.synapse.org/Synapse:syn53404507"
+
+Prerequisites
+Ensure Python 3.8+ is installed. You will also need pip to install the required libraries.
+
+Installation
+Clone the repository:
+git clone https://github.com/yourusername/cataract-guided-diffusion.git
+cd cataract-guided-diffusion
+Install dependencies:
+pip install -r requirements.txt
+
+Requirements
+The following Python libraries are required for this project:
+
+torch==2.0.0
+torchvision==0.15.0
+tqdm==4.64.1
+Pillow==9.5.0
+pandas==1.5.3
+numpy==1.24.2
+guided-diffusion==0.0.1
+
+Prepare the Dataset:
+
+Use the processing and no diffusion.ipynb notebook to create the proper CSV file for training purposes.
+The CSV file must contain two columns:
+image_path: Path to the image.
+label: Associated surgical phase label for the image.
+
+Train the Model:
+After generating the CSV file, run the Cataract ITH MTECH IT NITK.ipynb notebook.
+This notebook trains a deep learning model using the prepared CSV file and synthesized data.
+Evaluate the Model:
+
+Evaluate the trained model using test data.
+Visualize performance metrics such as accuracy, loss, and confusion matrices.
+
+Future Enhancements
+Improve augmentation strategies for synthesizing rare samples.
+Integrate real-time phase detection for surgical assistance.
+Expand model evaluation with larger datasets.
+Include more precise weighted loss function for more accurage matrics.
+
+
+
+
+
