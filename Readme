@@ -1,7 +1,9 @@
 Synthesizing Rare Cataract Surgery Samples With Guided Diffusion Models
+
 This repository focuses on synthesizing rare cataract surgery samples using guided diffusion models. The project involves data preprocessing, phase classification, and the application of guided diffusion for augmenting and generating training data.
 
 Project Overview
+
 Cataract surgeries are intricate procedures involving multiple phases, which makes training learning models challenging due to imbalanced datasets. This project uses guided diffusion models to synthesize rare phases of surgery and build a robust classification model.
 
 Key features include:
