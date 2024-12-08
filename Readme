@@ -13,7 +13,7 @@ Training a classification model for cataract surgery phases using augmented data
 Leveraging guided diffusion models for rare phase augmentation.
 
 Dataset
-The dataset used for this project is Cataract-1K, which consists of 1,000 samples from cataract surgeries. Due to the vast size of the dataset, only 20% of the data was used for training. The dataset is available for download from Synapse:
+The dataset used for this project is Cataract-1K, which consists of 1,000 video samples from cataract surgeries. Due to the vast size of the dataset, only 20% of the data was used for training. The dataset is available for download from Synapse:
 Cataract-1K Dataset on Synapse link - "https://www.synapse.org/Synapse:syn53404507"
 
 Prerequisites
